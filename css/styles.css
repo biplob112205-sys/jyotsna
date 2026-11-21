@@ -124,7 +124,7 @@ body.cover-active {
   color: #0E2A4A;
   line-height: 0.88;
   text-shadow: 0 10px 30px rgba(10, 37, 64, 0.12);
-  font-size: clamp(3.8rem, 15.5vw, 13.5rem);
+  font-size: clamp(2.6rem, 13vw, 13.5rem);
   user-select: none;
 }
 
@@ -135,7 +135,7 @@ body.cover-active {
   text-shadow: 
     0 2px 10px rgba(10, 37, 64, 0.6),
     0 4px 20px rgba(10, 37, 64, 0.3);
-  font-size: clamp(2.4rem, 8.5vw, 7.5rem);
+  font-size: clamp(1.8rem, 7.5vw, 7.5rem);
   letter-spacing: 0.02em;
   white-space: nowrap;
   user-select: none;
@@ -445,15 +445,32 @@ body.cover-active {
   background: #64748B;
 }
 
-/* Mobile Adjustments */
+/* Mobile Adjustments & Ergonomics (< 768px) */
 @media (max-width: 768px) {
   .contact-pill-item {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
+    font-size: 0.72rem;
+    padding: 0.25rem 0.55rem;
   }
   .contact-icon-circle {
     width: 22px;
     height: 22px;
     font-size: 0.65rem;
+  }
+  .floating-header-capsule {
+    padding-top: 0.45rem !important;
+    padding-bottom: 0.45rem !important;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 0 4px 20px rgba(10, 37, 64, 0.08);
+  }
+  .glass-luxury-card {
+    border-radius: 1.25rem;
+  }
+  .display-portfolio {
+    font-size: clamp(2.6rem, 13.5vw, 4.8rem);
+  }
+  .script-signature {
+    font-size: clamp(1.8rem, 7.8vw, 3.2rem);
   }
 }

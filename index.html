@@ -246,7 +246,7 @@
           <img 
             src="assets/sora-logo-full.jpg" 
             alt="SORA LENSWORKS Logo" 
-            class="h-9 w-9 sm:h-10 sm:w-10 rounded-xl object-cover transition-transform group-hover:scale-105 shadow-sm border border-slate-800" 
+            class="hidden sm:block h-9 w-9 sm:h-10 sm:w-10 rounded-xl object-cover transition-transform group-hover:scale-105 shadow-sm border border-slate-800" 
           />
           <div class="flex flex-col">
             <span class="text-sm sm:text-base font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors leading-tight cms-brand-name">
@@ -341,12 +341,12 @@
           </div>
 
           <!-- 2. Master Headline: Bold, Confident & Concise (No Overcrowding) -->
-          <h1 id="hero-headline" class="text-4xl sm:text-6xl lg:text-7xl font-black text-slate-900 tracking-[-0.03em] leading-[1.06] max-w-4xl mx-auto">
+          <h1 id="hero-headline" class="text-3xl sm:text-6xl lg:text-7xl font-black text-slate-900 tracking-[-0.03em] leading-[1.08] max-w-4xl mx-auto">
             Graphic Design &amp; Cinematic Video Editing.
           </h1>
 
           <!-- 3. Subheadline: Clean & Readable -->
-          <p id="hero-subheadline" class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal mt-4">
+          <p id="hero-subheadline" class="text-sm sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal mt-4">
             Directed by Jyotsna Bhattacharyya (JB GFX). High-converting advertising posters, brand visuals &amp; 4K cinematic video post-production.
           </p>
 
@@ -373,8 +373,8 @@
             </button>
           </div>
 
-          <!-- 5. Single Pristine Centerpiece Showcase (Real SORA Brand Artwork) -->
-          <div class="mt-10 sm:mt-12 max-w-3xl mx-auto">
+          <!-- 5. Single Pristine Centerpiece Showcase (Real SORA Brand Artwork) - Desktop & Tablet Only -->
+          <div class="hidden sm:block mt-10 sm:mt-12 max-w-3xl mx-auto">
             <div class="relative bg-white/80 backdrop-blur-xl rounded-3xl p-3 sm:p-4 border border-blue-100 shadow-xl space-y-3">
               
               <!-- Clean High-Def Brand Presentation Screen -->
@@ -428,6 +428,25 @@
               </div>
 
             </div>
+          </div>
+
+          
+          <!-- Mobile Only: Sleek Discipline Bar (Replaces cramped dark box & unreadable logo on phones) -->
+          <div class="sm:hidden mt-6 flex flex-wrap items-center justify-center gap-2 px-2">
+            <button 
+              onclick="scrollToWork()"
+              class="px-4 py-2 rounded-full text-xs font-bold bg-blue-50/90 text-blue-800 border border-blue-200/80 shadow-2xs flex items-center gap-1.5 active:scale-95 transition-transform"
+            >
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+              <span>6 Graphic Design Services</span>
+            </button>
+            <button 
+              onclick="scrollToWork()"
+              class="px-4 py-2 rounded-full text-xs font-bold bg-indigo-50/90 text-indigo-800 border border-indigo-200/80 shadow-2xs flex items-center gap-1.5 active:scale-95 transition-transform"
+            >
+              <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+              <span>6 Video Editing Services</span>
+            </button>
           </div>
 
           <!-- 6. Studio Stats Horizontal Ribbon (Clean & Airy) -->
@@ -515,7 +534,7 @@
           <!-- Interactive Category Filter Tabs -->
           <div class="flex items-center gap-2 overflow-x-auto pb-4 scrollbar-none mb-8" id="work-filter-tabs">
             <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-[#0A2540] text-white shadow-sm shrink-0" data-filter="all" onclick="filterWorkBy('all')">
-              All Work (12)
+              All Work
             </button>
             <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 shrink-0" data-filter="poster-design" onclick="filterWorkBy('poster-design')">
               Poster Design
