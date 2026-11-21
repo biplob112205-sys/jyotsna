@@ -1,0 +1,307 @@
+================================================================================
+SORA LENSWORKS | OFFICIAL CLIENT HANDOVER & CMS MANAGEMENT GUIDE
+================================================================================
+Client / Studio Brand : SORA LENSWORKS (JB GFX)
+Founder / Art Director: Jyotsna Bhattacharyya
+Discipline             : Graphic Design & Cinematic Video Editing
+Contact WhatsApp       : +91 6291152548 (https://wa.me/916291152548)
+Official Email         : jyotsna.gfx.2004@gmail.com
+Version                : 4.0 Production Release (Clean Slate - 0 Demo Projects)
+================================================================================
+
+WELCOME TO YOUR NEW PORTFOLIO WEBSITE!
+This website is custom-built with high-performance modern web standards (HTML5,
+Tailwind CSS architecture, and modular JavaScript). It requires NO complicated
+server setups, NO monthly database fees, and runs directly in any browser.
+
+All demo/placeholder projects have been removed so your portfolio starts 100% clean.
+Follow this step-by-step guide to customize your brand information, add your
+real projects, change passwords, and launch your site live to the world!
+
+--------------------------------------------------------------------------------
+TABLE OF CONTENTS
+--------------------------------------------------------------------------------
+1. HOW TO OPEN & PREVIEW YOUR WEBSITE
+2. HOW TO ACCESS THE SECRET ADMIN PANEL (STUDIO VAULT)
+3. DEFAULT LOGIN CREDENTIALS & HOW TO CHANGE THEM
+4. HOW TO ADD, EDIT & DELETE REAL CLIENT PROJECTS
+5. HOW TO CUSTOMIZE BRAND DETAILS & CONTACT NUMBERS
+6. HOW TO EDIT SERVICES, DELIVERABLES & TURNAROUND TIMES
+7. HOW TO CUSTOMIZE BRAND COLORS & THEME
+8. HOW TO BACKUP & RESTORE YOUR DATA (JSON EXPORT/IMPORT)
+9. HOW TO DIRECTLY EDIT SOURCE CODE FILES (OPTIONAL FOR DEVELOPERS)
+10. HOW TO PUBLISH & HOST YOUR WEBSITE LIVE FOR FREE
+11. DIRECT SUPPORT & CONTACT
+
+================================================================================
+1. HOW TO OPEN & PREVIEW YOUR WEBSITE
+================================================================================
+Method A: Instant Double-Click (Zero Setup)
+------------------------------------------
+1. Open the project folder on your computer.
+2. Locate the file named `index.html`.
+3. Double-click `index.html` (or right-click -> Open With -> Google Chrome,
+   Microsoft Edge, Brave, or Safari).
+4. The website will load immediately with the preloader, intro cover, and clean
+   commercial portfolio archive!
+
+Method B: Using a Local Web Server (Recommended for Best Performance)
+--------------------------------------------------------------------
+- If using VS Code: Install the extension "Live Server", right-click `index.html`
+  and select "Open with Live Server".
+- If using Terminal / Command Prompt:
+  Navigate to this folder and run:
+  python3 -m http.server 8000
+  Then open your browser at: http://localhost:8000
+
+================================================================================
+2. HOW TO ACCESS THE SECRET ADMIN PANEL (STUDIO VAULT)
+================================================================================
+To protect your website from unauthorized edits by regular visitors, the Admin
+Panel (Studio Vault) is hidden behind two stealth access methods:
+
+Access Method 1 (Keyboard Shortcut):
+-----------------------------------
+- On Windows / Linux: Press `Ctrl + Shift + A` at the same time.
+- On Mac: Press `Cmd + Shift + A` at the same time.
+The login modal will instantly slide in.
+
+Access Method 2 (Stealth Footer Link):
+--------------------------------------
+1. Scroll down to the very bottom of the website (the footer).
+2. Look at the bottom-right copyright area.
+3. Click the discreet lock link: `🔒 Studio Vault`.
+The login modal will appear.
+
+================================================================================
+3. DEFAULT LOGIN CREDENTIALS & HOW TO CHANGE THEM
+================================================================================
+Default Admin Credentials:
+--------------------------
+- Admin ID : admin
+- Password : Sora@2026
+
+How to Change Your Admin ID and Password:
+-----------------------------------------
+1. Log into the Admin Vault using the default credentials above.
+2. Click on the "Security" tab in the Admin navigation bar.
+3. In the "Admin Username / ID" field, enter your desired new username.
+4. In the "Admin Password" field, enter your strong new password.
+5. Click the green "Save Security Settings" button.
+6. A success alert will confirm your updated credentials!
+   (Write down your new password in a safe location).
+
+================================================================================
+4. HOW TO ADD, EDIT & DELETE REAL CLIENT PROJECTS
+================================================================================
+Your website currently has 0 demo projects, meaning it is a clean slate ready
+for your genuine client work.
+
+A. How to Add a New Project:
+----------------------------
+1. Open the Admin Panel (`Ctrl + Shift + A` or click `🔒 Studio Vault`).
+2. Click on the "Projects" tab.
+3. You will see the "Add / Edit Commercial Project" form. Fill in the fields:
+   - Project Title : E.g., "Aura Luxe | 4K Brand Film" or "Cyberpunk Theatrical Poster"
+   - Category      : Choose from the dropdown:
+                     * Poster Design
+                     * Banner Design
+                     * Social Media Posters
+                     * Album Design
+                     * Wedding Photo Editing
+                     * Ads Poster Design
+                     * Cinematic Video Editing
+                     * Podcast Editing
+                     * Motion Graphics Video
+                     * AI Ads Video
+                     * AI Documentary Video Editing
+                     * Ads Video Editing
+   - Category Label: Type the display label (e.g., "Poster Design" or "Cinematic Video")
+   - Subtitle      : A short 1-line summary (e.g., "Theatrical print poster with dual-tone grading")
+   - Description   : 2-3 sentences explaining your creative process and results.
+   - Client Name   : E.g., "Sony Music", "Apex Apparel", or "Confidential Commercial Client"
+   - Timeline      : E.g., "48 Hours Turnaround" or "3 Days Delivery"
+   - Deliverables  : Comma-separated list (e.g., "4K ProRes 422 Master, 9:16 Viral Reels, Rec.709 LUT")
+   - Tools Used    : Comma-separated list (e.g., "Photoshop, Illustrator, DaVinci Resolve")
+   - Project Image : 
+     * Option 1: Place your image (JPG, PNG, WebP) in the `assets/` folder, then
+       type the relative path: `assets/my-project-1.jpg`
+     * Option 2: Paste any direct web image link (e.g., from Imgur, Cloudinary,
+       AWS S3, or your Google Drive direct link).
+4. Click the blue button: "Save Project to Portfolio".
+5. Close the Admin modal. Your new project will immediately appear under the
+   "Work Showcase" grid and inside the filtered category tabs!
+
+B. How to Edit an Existing Project:
+-----------------------------------
+1. In the Admin Panel -> "Projects" tab, scroll down to "Existing Projects List".
+2. Locate the project you wish to update.
+3. Click the blue "Edit" button next to it.
+4. The form above will automatically populate with that project's information.
+5. Make your edits and click "Save Project to Portfolio".
+
+C. How to Delete a Project:
+---------------------------
+1. In the Admin Panel -> "Projects" tab, scroll down to "Existing Projects List".
+2. Click the red "Delete" button next to the project you wish to remove.
+3. Confirm the prompt. The project will be permanently removed from your live site.
+
+================================================================================
+5. HOW TO CUSTOMIZE BRAND DETAILS & CONTACT NUMBERS
+================================================================================
+Updating your contact details here automatically updates ALL phone links, email
+links, and one-click WhatsApp inquiry buttons across the entire website!
+
+1. Open Admin Panel -> Click the "Brand & Profile" tab.
+2. Edit any of the following fields:
+   - Brand Name     : SORA LENSWORKS
+   - Monogram / Logo : JB GFX
+   - Founder Name   : Jyotsna Bhattacharyya
+   - Brand Tagline  : Graphic Design • Video Editing
+   - WhatsApp Number: +91 6291152548
+     * IMPORTANT: When you change this number, all 1-click WhatsApp chat buttons,
+       modal inquiry buttons, and floating CTAs update to your new WhatsApp number!
+   - Email Address  : jyotsna.gfx.2004@gmail.com
+   - Instagram URL  : https://instagram.com/yourhandle
+   - Behance URL    : https://behance.net/yourhandle
+   - Location       : Kolkata, India (Global Remote Delivery)
+3. Click the green "Save Brand Profile" button.
+4. All updates take effect immediately on your website.
+
+================================================================================
+6. HOW TO EDIT SERVICES, DELIVERABLES & TURNAROUND TIMES
+================================================================================
+The website features 12 specialized disciplines (6 Graphic Design + 6 Video Editing).
+
+To edit or refine any service:
+1. Open Admin Panel -> Click the "Services" tab.
+2. Scroll to "Existing Services Directory".
+3. Click "Edit" next to any service.
+4. Adjust the Service Name, Deliverables, Software Stack, or Turnaround Time.
+5. Click "Save Service to Dossier".
+6. To add a brand-new custom service package, simply enter the details in the form
+   and click Save.
+
+================================================================================
+7. HOW TO CUSTOMIZE BRAND COLORS & THEME
+================================================================================
+The website is styled in an Awwwards-caliber aesthetic using deep navy, royal
+blue, sky blue, and ice-blue glass gradients with gold accents.
+
+To fine-tune colors:
+1. Open Admin Panel -> Click the "Theme & Appearance" tab.
+2. You can use the visual color pickers or type hexadecimal codes:
+   - Deep Navy Dark : #0A2540
+   - Royal Blue     : #1B56A8
+   - Sky Blue       : #5B95E5
+   - Ice Blue Light : #D4E7FF
+   - Gold Accent    : #D4A338
+3. Click "Save Theme Colors". The website updates its CSS variables in real-time!
+
+================================================================================
+8. HOW TO BACKUP & RESTORE YOUR DATA (JSON EXPORT/IMPORT)
+================================================================================
+All changes you make via the Admin Panel are saved safely in your browser's
+persistent LocalStorage. However, if you clear your browser history, change
+computers, or want to send your project configuration to someone else, use the
+built-in JSON Backup tool!
+
+How to Create a Backup:
+-----------------------
+1. Open Admin Panel -> Click the "Data Backup & JSON" tab.
+2. You will see a text box containing all your projects, brand data, services,
+   and settings formatted in clean JSON.
+3. Click the button: "📋 Copy CMS JSON to Clipboard".
+4. Open a text editor (Notepad, TextEdit, etc.) and paste the text. Save it as
+   `my_portfolio_backup.json` on your computer or Google Drive.
+
+How to Restore from a Backup:
+-----------------------------
+1. Open Admin Panel -> Click the "Data Backup & JSON" tab.
+2. Paste your backup JSON text into the text box.
+3. Click the button: "📥 Import & Apply JSON".
+4. The website will immediately reload with all your projects and settings restored!
+
+================================================================================
+9. HOW TO DIRECTLY EDIT SOURCE CODE FILES (FOR DEVELOPERS)
+================================================================================
+If you or your developer prefer to permanently hardcode changes directly into
+the source code files so they appear by default on all new devices:
+
+Key Project Files:
+------------------
+- `index.html` : The main HTML structure (Preloader, Cover, Hero, Work Showcase,
+                 Dossier, About, Contact, and Admin Modal markup).
+- `css/styles.css`: Custom animations, glassmorphism styles, and typography rules.
+- `js/app.js`  : Application engine, CMS manager, modal popups, and project rendering.
+- `assets/`    : Logo images (`sora-logo-full.jpg`, `sora-logo-circle.png`), icons,
+                 and client project image files.
+
+To Hardcode Default Projects Directly:
+1. Open `js/app.js` in VS Code or any code editor.
+2. Locate `const DEFAULT_CMS_DATA = {` near line 12.
+3. Scroll down to `projects: []`.
+4. Add your project objects inside the array formatted like this:
+   {
+     id: "proj-1",
+     title: "My Client Project Title",
+     category: "poster-design",
+     categoryLabel: "Poster Design",
+     client: "Brand Name",
+     year: "2026",
+     timeline: "48 Hours Turnaround",
+     deliverables: ["Print Ready CMYK", "Social Formats"],
+     tools: ["Photoshop", "Illustrator"],
+     image: "assets/my-image.jpg",
+     subtitle: "One line summary of the project",
+     description: "Full description of the creative direction and deliverables."
+   }
+5. Save the file.
+
+================================================================================
+10. HOW TO PUBLISH & HOST YOUR WEBSITE LIVE FOR FREE
+================================================================================
+You can deploy this website to the internet with your own custom domain in under
+2 minutes using any of the following free, lightning-fast hosting platforms:
+
+Option 1: Vercel (Fastest & Most Modern)
+----------------------------------------
+1. Go to https://vercel.com and create a free account.
+2. Drag and drop the `jyostna` folder directly into Vercel's dashboard.
+3. Click "Deploy". Your website is instantly live with a free SSL certificate!
+4. You can connect your custom domain (e.g., `soralensworks.com`) in Settings.
+
+Option 2: Netlify (Drag & Drop)
+-------------------------------
+1. Go to https://app.netlify.com/drop.
+2. Drag and drop this folder into the browser window.
+3. Your site is live in 10 seconds!
+
+Option 3: GitHub Pages
+----------------------
+1. Push this folder to a GitHub repository.
+2. In Repository Settings -> Pages, select "Deploy from Branch: main" and save.
+3. Your website will be live at `https://username.github.io/reponame`.
+
+Option 4: Traditional cPanel Web Hosting
+----------------------------------------
+1. Log into your cPanel or web hosting file manager (Hostinger, Bluehost, GoDaddy).
+2. Open the `public_html` directory.
+3. Upload all files from this folder (`index.html`, `css/`, `js/`, `assets/`).
+4. Visit your domain in any browser!
+
+================================================================================
+11. DIRECT TECHNICAL SUPPORT & CONTACT
+================================================================================
+If you need any assistance adding custom features, integrating video reels, or
+updating layouts, please reach out directly:
+
+Founder & Creative Director:
+- Name     : Jyotsna Bhattacharyya (JB GFX)
+- Studio   : SORA LENSWORKS
+- WhatsApp : +91 6291152548 (Direct chat: https://wa.me/916291152548)
+- Email    : jyotsna.gfx.2004@gmail.com
+
+================================================================================
+END OF GUIDE - THANK YOU FOR CHOOSING SORA LENSWORKS!
+================================================================================

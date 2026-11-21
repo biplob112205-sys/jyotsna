@@ -1,0 +1,459 @@
+/* SORA LENSWORKS - Custom Styles & Transitions */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat:wght@600;700&family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800;900&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --navy-dark: #0A2540;
+  --navy-deep: #0D2847;
+  --royal-blue: #1B56A8;
+  --sky-blue: #5B95E5;
+  --ice-bg-start: #D4E7FF;
+  --ice-bg-end: #EDF4FF;
+  --gold-accent: #D4A338;
+  --gold-light: #F7D070;
+}
+
+/* Global Reset & Smooth Behavior */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--navy-dark);
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Locked scroll state when cover page is active */
+body.cover-active {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Stage 1: Preloader (Untouched) */
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: radial-gradient(circle at center, #0F2C54 0%, #061528 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#preloader.fade-out {
+  opacity: 0;
+  transform: scale(1.05);
+  pointer-events: none;
+}
+
+.shutter-blade-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% { filter: drop-shadow(0 0 8px rgba(212, 163, 56, 0.4)); }
+  100% { filter: drop-shadow(0 0 24px rgba(91, 149, 229, 0.8)); }
+}
+
+/* Stage 2: Intro Cover Viewport (Untouched) */
+#intro-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 5000;
+  background: linear-gradient(135deg, #D4E7FF 0%, #E3EFFF 50%, #F2F8FF 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: transform 0.95s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.95s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#intro-cover.curtain-lifted {
+  transform: translateY(-100%);
+  opacity: 0.98;
+  pointer-events: none;
+}
+
+.corner-wave-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 1;
+  max-width: 55vw;
+}
+
+.corner-wave-bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+  max-width: 55vw;
+}
+
+.sparkle-icon {
+  animation: twinkle 3s ease-in-out infinite alternate;
+}
+
+.sparkle-icon.delayed {
+  animation-delay: 1.5s;
+}
+
+@keyframes twinkle {
+  0% { transform: scale(0.8) rotate(0deg); opacity: 0.5; }
+  50% { transform: scale(1.15) rotate(15deg); opacity: 0.95; }
+  100% { transform: scale(0.85) rotate(0deg); opacity: 0.55; }
+}
+
+.display-portfolio {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: #0E2A4A;
+  line-height: 0.88;
+  text-shadow: 0 10px 30px rgba(10, 37, 64, 0.12);
+  font-size: clamp(3.8rem, 15.5vw, 13.5rem);
+  user-select: none;
+}
+
+.script-signature {
+  font-family: 'Alex Brush', cursive;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-shadow: 
+    0 2px 10px rgba(10, 37, 64, 0.6),
+    0 4px 20px rgba(10, 37, 64, 0.3);
+  font-size: clamp(2.4rem, 8.5vw, 7.5rem);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.heart-doodle {
+  display: inline-block;
+  vertical-align: middle;
+  filter: drop-shadow(0 2px 8px rgba(10, 37, 64, 0.5));
+  animation: heartPulse 3s ease-in-out infinite;
+}
+
+@keyframes heartPulse {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.1) rotate(6deg); }
+}
+
+.contact-pill-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0E2A4A;
+  transition: all 0.25s ease;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.contact-pill-item:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(10, 37, 64, 0.08);
+}
+
+.contact-icon-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #0E2A4A;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+.cta-view-work {
+  background: linear-gradient(135deg, #0A2540 0%, #1B56A8 100%);
+  color: #FFFFFF;
+  box-shadow: 0 10px 25px rgba(27, 86, 168, 0.35);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-view-work:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 16px 35px rgba(27, 86, 168, 0.45);
+}
+
+.cta-view-work::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+  transition: 0.75s;
+}
+
+.cta-view-work:hover::after {
+  left: 100%;
+}
+
+/* ========================================================
+   STAGE 3: BESPOKE CREATIVE STUDIO ARCHITECTURE
+   ======================================================== */
+#main-website {
+  min-height: 100vh;
+  position: relative;
+  z-index: 10;
+  background: #FFFFFF;
+}
+
+/* View Transition */
+.page-view {
+  animation: fadeInView 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInView {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* True Ultra-Translucent Frosted Glass Header (High Translucency & Specular Luster) */
+.floating-header-capsule {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 
+    0 8px 32px 0 rgba(10, 37, 64, 0.08),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.75);
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floating-header-capsule:hover {
+  background: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 
+    0 12px 36px 0 rgba(10, 37, 64, 0.12),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Navigation active tab pill */
+.nav-tab-btn {
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+}
+
+.nav-tab-btn.active-tab {
+  background: #0A2540;
+  color: #FFFFFF !important;
+  font-weight: 800;
+  box-shadow: 0 4px 12px rgba(10, 37, 64, 0.2);
+}
+
+/* Official WhatsApp Button */
+.btn-whatsapp-pill {
+  background: #25D366;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.btn-whatsapp-pill:hover {
+  background: #20BD5A;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.45);
+}
+
+/* Kinetic Seamless Marquee Ticker */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 28s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Atmospheric Editorial Gradient Backdrop */
+.hero-editorial-mesh {
+  background: 
+    radial-gradient(circle at 80% 20%, rgba(212, 163, 56, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 10% 30%, rgba(91, 149, 229, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(27, 86, 168, 0.08) 0%, transparent 50%),
+    linear-gradient(180deg, #F8FAFD 0%, #FFFFFF 100%);
+}
+
+/* Shutter Core Aura */
+.shutter-core-frame {
+  position: relative;
+  border-radius: 2.2rem;
+  overflow: hidden;
+  box-shadow: 
+    0 25px 60px -15px rgba(10, 37, 64, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.6) inset;
+}
+
+.orbital-glow {
+  animation: orbitRotate 22s linear infinite;
+}
+
+@keyframes orbitRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Interactive Service Dossier Row */
+.dossier-item {
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.dossier-item:hover, .dossier-item.active-dossier {
+  background: rgba(237, 244, 255, 0.7);
+  padding-left: 1.25rem;
+  border-color: #1B56A8;
+}
+
+/* Luxury Translucent Glass Cards (True Glassmorphism) */
+.glass-luxury-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px) saturate(190%);
+  -webkit-backdrop-filter: blur(16px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 
+    0 10px 30px rgba(10, 37, 64, 0.05),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-luxury-card:hover {
+  background: rgba(255, 255, 255, 0.65);
+  transform: translateY(-4px);
+  box-shadow: 
+    0 20px 45px rgba(10, 37, 64, 0.1),
+    inset 0 1px 1px rgba(255, 255, 255, 0.95);
+  border-color: rgba(91, 149, 229, 0.5);
+}
+
+/* Clean Minimalist Luxury Frame */
+
+/* Stealth Admin Trigger in Footer */
+.stealth-admin-trigger {
+  opacity: 0.15;
+  cursor: pointer;
+  transition: opacity 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+.stealth-admin-trigger:hover {
+  opacity: 0.85;
+  color: #5B95E5;
+}
+
+/* Security Shake Animation */
+@keyframes shakeError {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+
+.shake-animation {
+  animation: shakeError 0.4s ease-in-out;
+}
+
+/* Strict Modal Display Control (Zero unwanted popups) */
+.modal-strict-hidden {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+
+.modal-strict-visible {
+  display: flex !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  opacity: 1 !important;
+}
+
+/* Toast Feedback */
+#toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999999;
+  transform: translateY(100px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#toast.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748B;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .contact-pill-item {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .contact-icon-circle {
+    width: 22px;
+    height: 22px;
+    font-size: 0.65rem;
+  }
+}

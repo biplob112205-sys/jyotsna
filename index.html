@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SORA LENSWORKS | Jyotsna Bhattacharyya • Graphic Design &amp; Video Editing</title>
+  <meta name="description" content="Official portfolio of SORA LENSWORKS by Jyotsna Bhattacharyya. Elite Graphic Design, Performance Ad Creatives &amp; Cinematic Video Editing." />
+
+  <!-- Google Fonts Preconnect & Load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat:wght@600;700&family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0A2540',
+              deep: '#0D2847',
+              royal: '#1B56A8',
+              sky: '#5B95E5',
+              ice: '#EDF4FF',
+              gold: '#D4A338',
+              goldLight: '#F7D070'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            script: ['"Alex Brush"', 'cursive'],
+            syne: ['"Syne"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="assets/sora-logo-circle.png" />
+</head>
+<body class="cover-active bg-white text-slate-900 selection:bg-blue-600 selection:text-white">
+
+  <!-- ========================================================
+       STAGE 1: MINIMAL PRELOADER / LOADING SCREEN
+       (Untouched as requested)
+       ======================================================== -->
+  <div id="preloader" role="dialog" aria-modal="true" aria-label="Loading SORA LENSWORKS">
+    <div class="flex flex-col items-center justify-center p-6 text-center max-w-md w-full">
+      <!-- Animated Brand Logo Artwork -->
+      <div class="relative w-36 h-36 mb-6 rounded-3xl overflow-hidden shadow-2xl border border-slate-700/60 p-0.5 bg-slate-900">
+        <div class="absolute inset-0 rounded-3xl bg-blue-500/20 blur-xl shutter-blade-glow"></div>
+        <img 
+          src="assets/sora-logo-full.jpg" 
+          alt="SORA LENSWORKS Official Logo" 
+          class="w-full h-full object-cover rounded-3xl relative z-10 drop-shadow-2xl" 
+        />
+      </div>
+
+      <!-- Welcome Typography -->
+      <span class="text-xs uppercase tracking-[0.28em] font-semibold text-blue-300/90 mb-2">
+        Welcome to
+      </span>
+      <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-1 cms-brand-name">
+        SORA LENSWORKS
+      </h2>
+      <p class="text-xs text-slate-400 font-medium tracking-wider uppercase mb-8 cms-brand-tagline">
+        Graphic Design • Video Editing
+      </p>
+
+      <!-- Percentage Counter & Sleek Bar -->
+      <div class="w-64 bg-slate-800/80 rounded-full h-1.5 overflow-hidden mb-3 p-0.5 border border-slate-700/50">
+        <div id="preloader-bar" class="h-full bg-gradient-to-r from-blue-400 via-sky-300 to-amber-300 rounded-full w-0 transition-all duration-100 ease-out"></div>
+      </div>
+      <div id="preloader-count" class="text-xs font-mono font-bold text-sky-400 tracking-wider">0%</div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       STAGE 2: FULL-SCREEN INTRO / COVER PAGE
+       (Exact Reference Architecture - Untouched)
+       ======================================================== -->
+  <section id="intro-cover" aria-label="Portfolio Cover Screen">
+    
+    <!-- Top-Right Organic Fluid Corner Wave -->
+    <svg class="corner-wave-tr w-64 sm:w-80 md:w-[420px] lg:w-[500px]" viewBox="0 0 500 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M500 0H220C280 40 310 100 290 160C265 235 340 280 410 270C460 260 480 310 500 340V0Z" fill="#1B56A8"/>
+      <path d="M500 0H310C350 45 370 95 350 145C330 195 380 230 435 220C475 210 490 250 500 270V0Z" fill="#5B95E5" opacity="0.85"/>
+      <path d="M500 0H410C430 35 440 70 425 105C410 140 445 165 475 160C492 155 498 175 500 185V0Z" fill="#93C5FD" opacity="0.6"/>
+    </svg>
+
+    <!-- Bottom-Left Organic Fluid Corner Wave -->
+    <svg class="corner-wave-bl w-64 sm:w-80 md:w-[420px] lg:w-[500px]" viewBox="0 0 500 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 360H280C220 320 190 260 210 200C235 125 160 80 90 90C40 100 20 50 0 20V360Z" fill="#1B56A8"/>
+      <path d="M0 360H190C150 315 130 265 150 215C170 165 120 130 65 140C25 150 10 110 0 90V360Z" fill="#5B95E5" opacity="0.85"/>
+      <path d="M0 360H90C70 325 60 290 75 255C90 220 55 195 25 200C8 205 2 185 0 175V360Z" fill="#93C5FD" opacity="0.6"/>
+    </svg>
+
+    <!-- Subtle 4-Point Sparkle Icons -->
+    <div class="absolute top-[28%] left-[7%] sm:left-[10%] z-20 pointer-events-none sparkle-icon">
+      <svg class="w-6 h-6 sm:w-8 sm:h-8 text-[#0D2847]" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/>
+      </svg>
+    </div>
+    <div class="absolute top-[16%] right-[32%] sm:right-[35%] z-20 pointer-events-none sparkle-icon delayed">
+      <svg class="w-5 h-5 sm:w-7 sm:h-7 text-[#0D2847]" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/>
+      </svg>
+    </div>
+    <div class="absolute bottom-[28%] right-[12%] z-20 pointer-events-none sparkle-icon">
+      <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#1B56A8]" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/>
+      </svg>
+    </div>
+
+    <!-- 1. TOP HEADER STRIP -->
+    <div class="relative z-20 w-full px-6 sm:px-12 pt-6 sm:pt-8 flex items-center justify-between">
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="flex flex-col">
+          <span class="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#0E2A4A] leading-tight">
+            Graphic Designer
+          </span>
+          <span class="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-[#1B56A8] leading-tight">
+            &amp; Video Editor
+          </span>
+        </div>
+        <div class="hidden sm:block w-8 sm:w-12 h-0.5 bg-[#0E2A4A] rounded-full"></div>
+      </div>
+
+      <!-- Center Logo Badge -->
+      <div class="flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 text-white backdrop-blur-md border border-white/20 shadow-md">
+        <img src="assets/sora-logo-circle.png" alt="SORA LENSWORKS Emblem" class="h-8 w-8 rounded-full object-cover" />
+        <span class="text-xs sm:text-sm font-black tracking-tight text-white cms-brand-name">SORA LENSWORKS</span>
+      </div>
+
+      <!-- Right 2026 Portfolio Link Button -->
+      <button 
+        id="btn-cover-top-right" 
+        class="inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-extrabold text-[#0E2A4A] hover:text-[#1B56A8] transition-colors py-1 px-2.5 rounded-full hover:bg-white/50"
+        title="Open Full Portfolio"
+      >
+        <span>2026 Portfolio</span>
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- 2. CENTER FOCAL TYPOGRAPHY & OVERLAY -->
+    <div class="relative z-20 flex-1 flex flex-col items-center justify-center text-center px-4">
+      <div class="relative inline-block max-w-full">
+        <h1 class="display-portfolio tracking-[-0.05em] select-none">
+          portfolio
+        </h1>
+
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none transform -rotate-3 sm:-rotate-2 translate-y-1 sm:translate-y-2">
+          <div class="inline-flex items-center gap-2 sm:gap-4 px-2">
+            <span class="script-signature cms-brand-founder">
+              Jyotsna Bhattacharyya
+            </span>
+            <svg class="heart-doodle w-7 h-7 sm:w-10 sm:h-10 md:w-14 md:h-14 text-white shrink-0" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 34C20 34 7 24 7 14C7 8 12 5 17 8C20 10 20 10 20 10C20 10 20 10 23 8C28 5 33 8 33 14C33 24 20 34 20 34Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prominent Primary CTA Pill -->
+      <div class="mt-4 sm:mt-6">
+        <button 
+          id="btn-view-work"
+          class="cta-view-work inline-flex items-center gap-3 px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-sm sm:text-base tracking-wide"
+        >
+          <span>View Our Work</span>
+          <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- 3. BOTTOM CONTACT STRIP -->
+    <div class="relative z-20 w-full px-4 sm:px-10 pb-6 sm:pb-8">
+      <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-2 sm:gap-4 md:gap-6 text-slate-800">
+        
+        <a href="tel:6291152548" class="contact-pill-item cms-brand-phone" title="Call Creator">
+          <div class="contact-icon-circle">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/>
+            </svg>
+          </div>
+          <span class="font-bold">+91 6291152548</span>
+        </a>
+
+        <span class="hidden sm:inline-block text-slate-400 font-light select-none">|</span>
+
+        <button class="contact-pill-item btn-copy-email" title="Click to copy email">
+          <div class="contact-icon-circle">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <span class="cms-brand-email">jyotsna.gfx.2004@gmail.com</span>
+        </button>
+
+        <span class="hidden sm:inline-block text-slate-400 font-light select-none">|</span>
+
+        <a href="https://behance.net/soralensworks" target="_blank" rel="noopener noreferrer" class="contact-pill-item cms-brand-behance" title="Behance Portfolio">
+          <div class="contact-icon-circle font-black text-[10px]">
+            Bē
+          </div>
+          <span>behance.net/soralensworks</span>
+        </a>
+
+        <span class="hidden sm:inline-block text-slate-400 font-light select-none">|</span>
+
+        <a href="https://instagram.com/soralensworks" target="_blank" rel="noopener noreferrer" class="contact-pill-item cms-brand-ig" title="Follow on Instagram">
+          <div class="contact-icon-circle">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </div>
+          <span>@soralensworks</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================
+       STAGE 3: MAIN WEBSITE ARCHITECTURE
+       ======================================================== -->
+  <main id="main-website" class="relative">
+
+    <!-- FLOATING DYNAMIC CAPSULE HEADER (SLIM & ULTRA-TRANSLUCENT FROSTED GLASS) -->
+    <header class="sticky top-3 z-40 px-3 sm:px-6 transition-all duration-300">
+      <div class="floating-header-capsule max-w-5xl mx-auto px-4 sm:px-6 py-2 sm:py-2.5 flex items-center justify-between">
+        
+        <!-- Brand Signature with Real Sent Logo -->
+        <a href="#home" class="nav-brand-link flex items-center gap-3 group py-0.5">
+          <img 
+            src="assets/sora-logo-full.jpg" 
+            alt="SORA LENSWORKS Logo" 
+            class="h-9 w-9 sm:h-10 sm:w-10 rounded-xl object-cover transition-transform group-hover:scale-105 shadow-sm border border-slate-800" 
+          />
+          <div class="flex flex-col">
+            <span class="text-sm sm:text-base font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors leading-tight cms-brand-name">
+              SORA LENSWORKS
+            </span>
+            <span class="text-[9px] sm:text-[10px] font-bold tracking-wider uppercase text-blue-700">
+              <span class="cms-brand-founder">Jyotsna Bhattacharyya</span> • <span class="cms-brand-monogram">JB GFX</span>
+            </span>
+          </div>
+        </a>
+
+        <!-- Exactly 3 Core Navigation Tabs -->
+        <nav class="hidden md:flex items-center gap-1 sm:gap-2 text-xs sm:text-sm font-extrabold text-slate-700">
+          <button class="nav-tab-btn hover:text-blue-600 transition-colors px-3 py-1.5 rounded-full" data-target-view="work">
+            Work
+          </button>
+          <button class="nav-tab-btn hover:text-blue-600 transition-colors px-3 py-1.5 rounded-full" data-target-view="services">
+            Services
+          </button>
+          <button class="nav-tab-btn hover:text-blue-600 transition-colors px-3 py-1.5 rounded-full" data-target-view="contact">
+            Contact
+          </button>
+        </nav>
+
+        <!-- Right Side: Official Verified WhatsApp Button (Compact & Elegant) -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a 
+            href="https://wa.me/916291152548" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="btn-whatsapp-pill inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-black shadow-sm transition-all cms-whatsapp-link"
+            title="Chat with Jyotsna on WhatsApp"
+          >
+            <!-- Official WhatsApp SVG Icon -->
+            <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.44 19.65L5.27 16.61L5.07 16.3C4.24 14.98 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.04 3.69C14.24 3.69 16.31 4.55 17.86 6.11C19.42 7.66 20.28 9.73 20.27 11.92C20.28 16.46 16.58 20.15 12.04 20.15ZM16.56 14.41C16.31 14.29 15.1 13.69 14.88 13.61C14.65 13.53 14.49 13.49 14.32 13.74C14.16 13.99 13.69 14.54 13.55 14.7C13.41 14.87 13.26 14.89 13.01 14.77C12.76 14.64 11.96 14.38 11.01 13.53C10.27 12.87 9.77 12.06 9.63 11.81C9.48 11.56 9.61 11.43 9.74 11.3C9.85 11.19 9.99 11.01 10.11 10.86C10.24 10.71 10.28 10.61 10.36 10.45C10.44 10.28 10.4 10.14 10.34 10.02C10.28 9.9 9.79 8.69 9.58 8.2C9.38 7.72 9.18 7.79 9.02 7.78C8.88 7.77 8.71 7.77 8.55 7.77C8.38 7.77 8.12 7.83 7.89 8.08C7.66 8.33 7.02 8.93 7.02 10.15C7.02 11.38 7.91 12.56 8.03 12.73C8.16 12.89 9.79 15.4 12.27 16.47C12.86 16.73 13.32 16.88 13.68 17C14.27 17.18 14.81 17.16 15.24 17.09C15.72 17.02 16.71 16.49 16.92 15.9C17.12 15.31 17.12 14.8 17.06 14.7C17 14.59 16.81 14.53 16.56 14.41Z"/>
+            </svg>
+            <span>WhatsApp</span>
+            <span class="w-2 h-2 rounded-full bg-emerald-200 animate-ping"></span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" class="md:hidden p-1.5 rounded-lg text-slate-700 hover:bg-white/60 transition-colors" aria-label="Toggle navigation">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+          </svg>
+        </button>
+
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu-drawer" class="hidden md:hidden mt-2 max-w-5xl mx-auto rounded-3xl border border-white/60 bg-white/80 backdrop-blur-2xl px-5 py-4 space-y-3 shadow-xl">
+        <button class="nav-tab-btn block w-full text-left text-sm font-extrabold text-slate-800 py-2 border-b border-slate-100" data-target-view="home">
+          Home / Studio
+        </button>
+        <button class="nav-tab-btn block w-full text-left text-sm font-extrabold text-slate-800 py-2 border-b border-slate-100" data-target-view="work">
+          Work Portfolio
+        </button>
+        <button class="nav-tab-btn block w-full text-left text-sm font-extrabold text-slate-800 py-2 border-b border-slate-100" data-target-view="services">
+          Services Directory
+        </button>
+        <button class="nav-tab-btn block w-full text-left text-sm font-extrabold text-slate-800 py-2 border-b border-slate-100" data-target-view="contact">
+          Contact &amp; Brief Builder
+        </button>
+        <div class="pt-2">
+          <a href="https://wa.me/916291152548" target="_blank" class="w-full text-center block text-xs font-black btn-whatsapp-pill py-2.5 rounded-full text-white cms-whatsapp-link">
+            Chat on WhatsApp (+91 6291152548)
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- ========================================================
+         VIEW 1: HOME PAGE (HIGH-CRAFT EDITORIAL STUDIO EXPERIENCE)
+         ======================================================== -->
+    <div id="view-home" class="page-view">
+      
+      <!-- HERO SECTION (CLEAN, MINIMAL & ULTRA-LUXURIOUS STUDIO CANVAS) -->
+      <section class="relative pt-12 pb-16 md:pt-16 md:pb-20 bg-gradient-to-b from-[#EDF4FF]/50 via-white to-white overflow-hidden text-center">
+        
+        <!-- Soft, subtle ambient luminous backdrop -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[450px] bg-gradient-to-b from-blue-200/25 via-sky-100/30 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <!-- 1. Sleek Minimal Eyebrow Tag -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50/90 border border-blue-200/60 text-xs font-bold tracking-wider text-blue-700 uppercase shadow-xs mb-4">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span id="hero-eyebrow">SORA LENSWORKS • JYOTSNA BHATTACHARYYA</span>
+          </div>
+
+          <!-- 2. Master Headline: Bold, Confident & Concise (No Overcrowding) -->
+          <h1 id="hero-headline" class="text-4xl sm:text-6xl lg:text-7xl font-black text-slate-900 tracking-[-0.03em] leading-[1.06] max-w-4xl mx-auto">
+            Graphic Design &amp; Cinematic Video Editing.
+          </h1>
+
+          <!-- 3. Subheadline: Clean & Readable -->
+          <p id="hero-subheadline" class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal mt-4">
+            Directed by Jyotsna Bhattacharyya (JB GFX). High-converting advertising posters, brand visuals &amp; 4K cinematic video post-production.
+          </p>
+
+          <!-- 4. Clean Dual Conversion Action -->
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-3.5 sm:gap-4">
+            <a 
+              href="https://wa.me/916291152548?text=Hello%20Jyotsna!%20I%20would%20like%20to%20discuss%20a%20project%20with%20SORA%20LENSWORKS." 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="btn-whatsapp-pill inline-flex items-center gap-2.5 px-7 py-3 rounded-full font-black text-xs uppercase tracking-wider text-white shadow-lg hover:shadow-xl transition-all cms-whatsapp-link"
+            >
+              <svg class="w-4 h-4 fill-white shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.44 19.65L5.27 16.61L5.07 16.3C4.24 14.98 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.04 3.69C14.24 3.69 16.31 4.55 17.86 6.11C19.42 7.66 20.28 9.73 20.27 11.92C20.28 16.46 16.58 20.15 12.04 20.15ZM16.56 14.41C16.31 14.29 15.1 13.69 14.88 13.61C14.65 13.53 14.49 13.49 14.32 13.74C14.16 13.99 13.69 14.54 13.55 14.7C13.41 14.87 13.26 14.89 13.01 14.77C12.76 14.64 11.96 14.38 11.01 13.53C10.27 12.87 9.77 12.06 9.63 11.81C9.48 11.56 9.61 11.43 9.74 11.3C9.85 11.19 9.99 11.01 10.11 10.86C10.24 10.71 10.28 10.61 10.36 10.45C10.44 10.28 10.4 10.14 10.34 10.02C10.28 9.9 9.79 8.69 9.58 8.2C9.38 7.72 9.18 7.79 9.02 7.78C8.88 7.77 8.71 7.77 8.55 7.77C8.38 7.77 8.12 7.83 7.89 8.08C7.66 8.33 7.02 8.93 7.02 10.15C7.02 11.38 7.91 12.56 8.03 12.73C8.16 12.89 9.79 15.4 12.27 16.47C12.86 16.73 13.32 16.88 13.68 17C14.27 17.18 14.81 17.16 15.24 17.09C15.72 17.02 16.71 16.49 16.92 15.9C17.12 15.31 17.12 14.8 17.06 14.7C17 14.59 16.81 14.53 16.56 14.41Z"/>
+              </svg>
+              <span>Chat on WhatsApp</span>
+              <span class="w-2 h-2 rounded-full bg-emerald-200 animate-ping"></span>
+            </a>
+
+            <button 
+              onclick="scrollToWork()"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-extrabold text-xs uppercase tracking-wider text-slate-800 bg-white hover:bg-slate-50 border border-slate-200 shadow-sm hover:shadow-md transition-all"
+            >
+              <span>View Our Work ↓</span>
+            </button>
+          </div>
+
+          <!-- 5. Single Pristine Centerpiece Showcase (Real SORA Brand Artwork) -->
+          <div class="mt-10 sm:mt-12 max-w-3xl mx-auto">
+            <div class="relative bg-white/80 backdrop-blur-xl rounded-3xl p-3 sm:p-4 border border-blue-100 shadow-xl space-y-3">
+              
+              <!-- Clean High-Def Brand Presentation Screen -->
+              <div class="relative w-full aspect-[16/9] sm:aspect-[2/1] rounded-2xl overflow-hidden bg-slate-950 shadow-inner flex items-center justify-center group">
+                <img 
+                  src="assets/sora-logo-full.jpg" 
+                  alt="SORA LENSWORKS Master Brand Artwork" 
+                  class="w-full h-full object-contain p-4 sm:p-6 transition-transform duration-700 group-hover:scale-105" 
+                />
+                
+                <!-- Bottom Ambient Pill Details -->
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-transparent flex items-end justify-between p-4 sm:p-5 pointer-events-none">
+                  <div class="text-left">
+                    <span class="text-[10px] font-mono font-bold text-amber-400 uppercase tracking-widest">Brand Monogram</span>
+                    <div class="text-white text-base sm:text-lg font-black">JB GFX • SORA LENSWORKS</div>
+                  </div>
+                  <div class="text-right">
+                    <span class="text-[10px] font-mono font-bold text-slate-400 uppercase">Dual Disciplines</span>
+                    <div class="text-sky-300 text-xs sm:text-sm font-extrabold">Graphic Design &amp; Video Editing</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clean Interactive Specialty Toggles & Live Badges -->
+              <div class="pt-2 px-2 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-slate-100">
+                <div class="flex items-center gap-2">
+                  <button 
+                    id="hero-toggle-gd" 
+                    onclick="switchHeroSpecialty('gd')"
+                    class="px-4 py-1.5 rounded-full text-xs font-bold bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors border border-blue-200/60"
+                  >
+                    ✦ Graphic Design (6)
+                  </button>
+                  <button 
+                    id="hero-toggle-ve" 
+                    onclick="switchHeroSpecialty('ve')"
+                    class="px-4 py-1.5 rounded-full text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors border border-slate-200/60"
+                  >
+                    ✦ Video Editing (6)
+                  </button>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-2 text-xs">
+                  <div id="hero-badge-1" class="px-3 py-1 rounded-full bg-blue-50/70 border border-blue-200/60 text-slate-800 font-semibold text-xs">
+                    <span class="text-blue-600 font-black">✦ GRAPHIC ARCHITECTURE</span> • Posters &amp; Ad Systems
+                  </div>
+                  <div id="hero-badge-2" class="px-3 py-1 rounded-full bg-indigo-50/70 border border-indigo-200/60 text-slate-800 font-semibold text-xs">
+                    <span class="text-indigo-600 font-black">✦ VIDEO DIRECTION</span> • 4K LOG &amp; AI Documentaries
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 6. Studio Stats Horizontal Ribbon (Clean & Airy) -->
+          <div id="hero-stats-container" class="mt-10 sm:mt-12 max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+            <!-- Dynamically populated via app.js with clean minimal cards -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTINUOUS KINETIC TYPOGRAPHY MARQUEE -->
+      <div class="py-4 bg-[#0A2540] text-white overflow-hidden border-y border-slate-800 select-none shadow-inner">
+        <div class="marquee-track flex items-center gap-8 text-xs sm:text-sm font-black tracking-widest uppercase">
+          <span class="flex items-center gap-3 text-amber-300">✦ SORA LENSWORKS</span>
+          <span>•</span>
+          <span class="text-sky-300">JB GFX MONOGRAM</span>
+          <span>•</span>
+          <span>POSTER DESIGN</span>
+          <span>•</span>
+          <span class="text-amber-300">4K CINEMATIC VIDEO EDITING</span>
+          <span>•</span>
+          <span>HIGH-CONVERTING AD CREATIVES</span>
+          <span>•</span>
+          <span class="text-sky-300">MOTION GRAPHICS</span>
+          <span>•</span>
+          <span>WEDDING COLOR GRADING</span>
+          <span>•</span>
+          <span class="text-amber-300">AI ADS &amp; DOCUMENTARIES</span>
+          <span>•</span>
+          <span>DIRECTED BY JYOTSNA BHATTACHARYYA</span>
+          <span>•</span>
+          <span class="text-emerald-400">48-HOUR RAPID TURNAROUND</span>
+          <span>•</span>
+          <!-- Seamless Loop Duplicate -->
+          <span class="flex items-center gap-3 text-amber-300">✦ SORA LENSWORKS</span>
+          <span>•</span>
+          <span class="text-sky-300">JB GFX MONOGRAM</span>
+          <span>•</span>
+          <span>POSTER DESIGN</span>
+          <span>•</span>
+          <span class="text-amber-300">4K CINEMATIC VIDEO EDITING</span>
+          <span>•</span>
+          <span>HIGH-CONVERTING AD CREATIVES</span>
+          <span>•</span>
+          <span class="text-sky-300">MOTION GRAPHICS</span>
+          <span>•</span>
+          <span>WEDDING COLOR GRADING</span>
+          <span>•</span>
+          <span class="text-amber-300">AI ADS &amp; DOCUMENTARIES</span>
+          <span>•</span>
+          <span>DIRECTED BY JYOTSNA BHATTACHARYYA</span>
+          <span>•</span>
+          <span class="text-emerald-400">48-HOUR RAPID TURNAROUND</span>
+          <span>•</span>
+        </div>
+      </div>
+
+      <!-- SELECTED WORK & PORTFOLIO SHOWCASE (INTERACTIVE CATEGORY FILTER) -->
+      <section id="work-showcase" class="py-16 md:py-24 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+              <span class="text-xs font-black uppercase tracking-wider text-blue-600">Client Portfolio</span>
+              <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-1">
+                Selected Work &amp; Case Studies
+              </h2>
+              <p class="text-sm text-slate-600 mt-2 max-w-xl">
+                Commercial projects directed by Jyotsna Bhattacharyya. Click any category tab below to filter work, or click a project card to inspect technical deliverables.
+              </p>
+            </div>
+            
+            <a 
+              href="https://wa.me/916291152548?text=Hello%20Jyotsna!%20I%20would%20like%20to%20discuss%20a%20commercial%20project%20with%20SORA%20LENSWORKS." 
+              target="_blank" 
+              class="btn-whatsapp-pill inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-black shadow-md hover:shadow-lg transition-all text-white cms-whatsapp-link self-start md:self-auto"
+            >
+              <svg class="w-4 h-4 fill-white shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.44 19.65L5.27 16.61L5.07 16.3C4.24 14.98 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.04 3.69C14.24 3.69 16.31 4.55 17.86 6.11C19.42 7.66 20.28 9.73 20.27 11.92C20.28 16.46 16.58 20.15 12.04 20.15ZM16.56 14.41C16.31 14.29 15.1 13.69 14.88 13.61C14.65 13.53 14.49 13.49 14.32 13.74C14.16 13.99 13.69 14.54 13.55 14.7C13.41 14.87 13.26 14.89 13.01 14.77C12.76 14.64 11.96 14.38 11.01 13.53C10.27 12.87 9.77 12.06 9.63 11.81C9.48 11.56 9.61 11.43 9.74 11.3C9.85 11.19 9.99 11.01 10.11 10.86C10.24 10.71 10.28 10.61 10.36 10.45C10.44 10.28 10.4 10.14 10.34 10.02C10.28 9.9 9.79 8.69 9.58 8.2C9.38 7.72 9.18 7.79 9.02 7.78C8.88 7.77 8.71 7.77 8.55 7.77C8.38 7.77 8.12 7.83 7.89 8.08C7.66 8.33 7.02 8.93 7.02 10.15C7.02 11.38 7.91 12.56 8.03 12.73C8.16 12.89 9.79 15.4 12.27 16.47C12.86 16.73 13.32 16.88 13.68 17C14.27 17.18 14.81 17.16 15.24 17.09C15.72 17.02 16.71 16.49 16.92 15.9C17.12 15.31 17.12 14.8 17.06 14.7C17 14.59 16.81 14.53 16.56 14.41Z"/>
+              </svg>
+              <span>Direct WhatsApp Inquiry</span>
+            </a>
+          </div>
+
+          <!-- Interactive Category Filter Tabs -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-4 scrollbar-none mb-8" id="work-filter-tabs">
+            <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-[#0A2540] text-white shadow-sm shrink-0" data-filter="all" onclick="filterWorkBy('all')">
+              All Work (12)
+            </button>
+            <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 shrink-0" data-filter="poster-design" onclick="filterWorkBy('poster-design')">
+              Poster Design
+            </button>
+            <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 shrink-0" data-filter="banner-design" onclick="filterWorkBy('banner-design')">
+              Banner Design
+            </button>
+            <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 shrink-0" data-filter="social-media-poster" onclick="filterWorkBy('social-media-poster')">
+              Social Media Posters
+            </button>
+            <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 shrink-0" data-filter="cinematic-video" onclick="filterWorkBy('cinematic-video')">
+              Cinematic Video
+            </button>
+            <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 shrink-0" data-filter="podcast-editing" onclick="filterWorkBy('podcast-editing')">
+              Podcast Editing
+            </button>
+            <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 shrink-0" data-filter="motion-graphics" onclick="filterWorkBy('motion-graphics')">
+              Motion Graphics
+            </button>
+            <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 shrink-0" data-filter="ai-ads-video" onclick="filterWorkBy('ai-ads-video')">
+              AI Ads &amp; Video
+            </button>
+            <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 shrink-0" data-filter="wedding-photo-editing" onclick="filterWorkBy('wedding-photo-editing')">
+              Wedding &amp; Album
+            </button>
+          </div>
+
+          <!-- Dynamic Work Grid -->
+          <div id="featured-work-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dynamically populated via app.js -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- MASTER CREATIVE DOSSIER & SERVICE LEDGER (INTERACTIVE AWWWARDS-CALIBER SPECIFICATION STAGE) -->
+      <section class="py-16 md:py-24 bg-gradient-to-b from-white via-blue-50/30 to-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+              <span class="text-xs font-black uppercase tracking-widest text-blue-600">Master Service Ledger</span>
+              <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-1">
+                Interactive Technical Dossier
+              </h2>
+              <p class="text-sm sm:text-base text-slate-600 mt-2 max-w-xl">
+                Explore our exact production capabilities, deliverables, and software standards. Click any discipline to inspect live technical specifications.
+              </p>
+            </div>
+
+            <!-- Dual Category Segmented Control -->
+            <div class="inline-flex p-1.5 rounded-full bg-slate-100 border border-slate-200 shadow-inner">
+              <button 
+                id="dossier-tab-gd" 
+                onclick="switchDossierCategory('graphic-design')" 
+                class="px-5 py-2 rounded-full text-xs font-extrabold transition-all bg-[#0A2540] text-white shadow-sm"
+              >
+                Graphic Design (6)
+              </button>
+              <button 
+                id="dossier-tab-ve" 
+                onclick="switchDossierCategory('video-editing')" 
+                class="px-5 py-2 rounded-full text-xs font-extrabold transition-all text-slate-600 hover:text-slate-900"
+              >
+                Video Editing (6)
+              </button>
+            </div>
+          </div>
+
+          <!-- Ledger Two-Column Split Architecture -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Column: Interactive Service Ledger List -->
+            <div class="lg:col-span-5 bg-white rounded-3xl p-4 sm:p-6 border border-slate-200/80 shadow-sm space-y-2">
+              <div class="text-xs font-black uppercase tracking-wider text-slate-400 pb-2 border-b border-slate-100 flex items-center justify-between">
+                <span>Discipline Index</span>
+                <span>Select to Inspect</span>
+              </div>
+              <div id="dossier-ledger-list" class="space-y-1 pt-1">
+                <!-- Dynamically rendered via app.js renderInteractiveDossier() -->
+              </div>
+            </div>
+
+            <!-- Right Column: Live Technical Dossier Stage & Direct Action -->
+            <div class="lg:col-span-7">
+              <div id="dossier-preview-stage">
+                <!-- Dynamically populated via app.js -->
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- INTERACTIVE 4-STEP PRODUCTION PIPELINE -->
+      <section class="py-16 md:py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-xs font-black uppercase tracking-widest text-blue-600">The Studio Standard</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-1">
+              Engineered Creative Pipeline
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2">
+              From creative brief to 4K broadcast / 300 DPI print release, our workflow ensures speed, alignment, and maximum conversion.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="process-card bg-slate-50/70 p-6 rounded-3xl space-y-4">
+              <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-black text-sm shadow-sm">
+                01
+              </div>
+              <h3 class="text-base font-extrabold text-slate-900">Brief &amp; Strategy</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Audience targeting analysis, moodboard curation, and creative alignment on hooks, aspect ratios, and visual tone.
+              </p>
+              <div class="text-[11px] font-bold text-blue-600 pt-2 border-t border-slate-200">
+                Phase 1 &bull; 24h Turnaround
+              </div>
+            </div>
+
+            <div class="process-card bg-slate-50/70 p-6 rounded-3xl space-y-4">
+              <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black text-sm shadow-sm">
+                02
+              </div>
+              <h3 class="text-base font-extrabold text-slate-900">Concept &amp; Drafting</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Vector pen precision, custom typographic framing, kinetic video cutting, and rhythmic sound placement.
+              </p>
+              <div class="text-[11px] font-bold text-indigo-600 pt-2 border-t border-slate-200">
+                Phase 2 &bull; Iterative Polish
+              </div>
+            </div>
+
+            <div class="process-card bg-slate-50/70 p-6 rounded-3xl space-y-4">
+              <div class="w-10 h-10 rounded-xl bg-amber-600 text-white flex items-center justify-center font-black text-sm shadow-sm">
+                03
+              </div>
+              <h3 class="text-base font-extrabold text-slate-900">Grading &amp; Sound Mix</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Natural skin retouching, 10-bit LOG color grading, LUT design, sound effects whooshes, and noise cleanup.
+              </p>
+              <div class="text-[11px] font-bold text-amber-600 pt-2 border-t border-slate-200">
+                Phase 3 &bull; Broadcast Polish
+              </div>
+            </div>
+
+            <div class="process-card bg-slate-50/70 p-6 rounded-3xl space-y-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-sm shadow-sm">
+                04
+              </div>
+              <h3 class="text-base font-extrabold text-slate-900">Final Master Delivery</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                CMYK 300 DPI vector print files, Apple ProRes 422 4K video masters, social cuts, and all native project stems.
+              </p>
+              <div class="text-[11px] font-bold text-emerald-600 pt-2 border-t border-slate-200">
+                Phase 4 &bull; 100% Commercial Rights
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+    </div>
+
+
+    <!-- ========================================================
+         VIEW 2: DEDICATED WORK PAGE
+         ======================================================== -->
+    <div id="view-work" class="page-view hidden py-16 md:py-24 bg-slate-50 min-h-screen">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-blue-600">Client Portfolio</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-1">
+            Commercial Work Archive
+          </h2>
+          <p class="text-slate-600 mt-2 text-sm max-w-xl">
+            Browse our completed real-world projects or contact us for private client reels.
+          </p>
+        </div>
+
+        <div id="full-work-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Dynamically populated via app.js -->
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ========================================================
+         VIEW 3: DEDICATED SERVICES PAGE (ALL 12 SERVICES)
+         ======================================================== -->
+    <div id="view-services" class="page-view hidden py-16 md:py-24 bg-white min-h-screen">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-black uppercase tracking-wider text-blue-600">Full Service Directory</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mt-1">
+            12 Dedicated Creative Disciplines
+          </h2>
+          <p class="text-slate-600 mt-3 text-sm sm:text-base">
+            Structured into 2 specialized suites: 6 Graphic Design and 6 Video Editing disciplines. Direct booking available via WhatsApp.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          
+          <!-- Graphic Design Services -->
+          <div class="bg-slate-50/80 rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between pb-6 border-b border-slate-200 mb-6">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-black text-slate-900">Graphic Design Services</h3>
+                    <p class="text-xs font-semibold text-blue-700">6 Dedicated Disciplines</p>
+                  </div>
+                </div>
+                <span class="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">
+                  CMYK 300 DPI
+                </span>
+              </div>
+
+              <div id="services-gd-list" class="space-y-4"></div>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-slate-200 text-center">
+              <span class="text-xs font-bold text-slate-500">Need bundled graphics? Special pricing available on WhatsApp.</span>
+            </div>
+          </div>
+
+          <!-- Video Editing Services -->
+          <div class="bg-slate-50/80 rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between pb-6 border-b border-slate-200 mb-6">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-black text-slate-900">Video Editing Services</h3>
+                    <p class="text-xs font-semibold text-indigo-700">6 Dedicated Disciplines</p>
+                  </div>
+                </div>
+                <span class="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-indigo-100 text-indigo-800">
+                  4K LOG ProRes
+                </span>
+              </div>
+
+              <div id="services-ve-list" class="space-y-4"></div>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-slate-200 text-center">
+              <span class="text-xs font-bold text-slate-500">Fast 48-hour delivery available on urgent video assignments.</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ========================================================
+         VIEW 4: DEDICATED CONTACT & BRIEF PAGE
+         ======================================================== -->
+    <div id="view-contact" class="page-view hidden py-16 md:py-24 bg-slate-50 min-h-screen">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Interactive Brief Configurator -->
+          <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-lg space-y-8">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold tracking-wide uppercase mb-2">
+                Instant WhatsApp Brief Builder
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                Send Your Project Inquiry
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                Select required services, choose your delivery timeline, and send a pre-formatted inquiry straight to Jyotsna.
+              </p>
+            </div>
+
+            <div>
+              <label class="block text-xs font-black uppercase tracking-wider text-slate-700 mb-3">
+                1. Select Services (Tap to Toggle):
+              </label>
+              <div id="brief-services-container" class="flex flex-wrap gap-2"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="brief-name" class="block text-xs font-black uppercase tracking-wider text-slate-700 mb-1.5">
+                  2. Your Name / Brand:
+                </label>
+                <input 
+                  type="text" 
+                  id="brief-name" 
+                  placeholder="e.g. Alex Sharma / Velocity Brand" 
+                  class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium"
+                />
+              </div>
+
+              <div>
+                <label for="brief-timeline" class="block text-xs font-black uppercase tracking-wider text-slate-700 mb-1.5">
+                  3. Expected Turnaround:
+                </label>
+                <select 
+                  id="brief-timeline" 
+                  class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium bg-white"
+                >
+                  <option value="Urgent (24 - 48 Hours)">Urgent (24 - 48 Hours)</option>
+                  <option value="Standard (3 - 5 Days)" selected>Standard (3 - 5 Days)</option>
+                  <option value="Comprehensive (1 - 2 Weeks)">Comprehensive (1 - 2 Weeks)</option>
+                  <option value="Monthly Retainer Partnership">Monthly Retainer Partnership</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="brief-notes" class="block text-xs font-black uppercase tracking-wider text-slate-700 mb-1.5">
+                4. Project Scope / Reference Links:
+              </label>
+              <textarea 
+                id="brief-notes" 
+                rows="3" 
+                placeholder="Share your goals, reference links, or target delivery dates..."
+                class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium"
+              ></textarea>
+            </div>
+
+            <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+              <div class="flex items-center justify-between text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">
+                <span>WhatsApp Message Preview</span>
+                <span class="text-emerald-700 flex items-center gap-1 font-semibold">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Live Synced
+                </span>
+              </div>
+              <pre id="brief-preview-text" class="text-xs text-slate-800 font-mono whitespace-pre-wrap leading-relaxed select-all bg-white p-3 rounded-lg border border-slate-200"></pre>
+            </div>
+
+            <button 
+              id="btn-send-brief" 
+              class="w-full py-4 rounded-2xl font-black text-sm uppercase tracking-wider text-white btn-whatsapp-pill flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+            >
+              <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.44 19.65L5.27 16.61L5.07 16.3C4.24 14.98 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.04 3.69C14.24 3.69 16.31 4.55 17.86 6.11C19.42 7.66 20.28 9.73 20.27 11.92C20.28 16.46 16.58 20.15 12.04 20.15ZM16.56 14.41C16.31 14.29 15.1 13.69 14.88 13.61C14.65 13.53 14.49 13.49 14.32 13.74C14.16 13.99 13.69 14.54 13.55 14.7C13.41 14.87 13.26 14.89 13.01 14.77C12.76 14.64 11.96 14.38 11.01 13.53C10.27 12.87 9.77 12.06 9.63 11.81C9.48 11.56 9.61 11.43 9.74 11.3C9.85 11.19 9.99 11.01 10.11 10.86C10.24 10.71 10.28 10.61 10.36 10.45C10.44 10.28 10.4 10.14 10.34 10.02C10.28 9.9 9.79 8.69 9.58 8.2C9.38 7.72 9.18 7.79 9.02 7.78C8.88 7.77 8.71 7.77 8.55 7.77C8.38 7.77 8.12 7.83 7.89 8.08C7.66 8.33 7.02 8.93 7.02 10.15C7.02 11.38 7.91 12.56 8.03 12.73C8.16 12.89 9.79 15.4 12.27 16.47C12.86 16.73 13.32 16.88 13.68 17C14.27 17.18 14.81 17.16 15.24 17.09C15.72 17.02 16.71 16.49 16.92 15.9C17.12 15.31 17.12 14.8 17.06 14.7C17 14.59 16.81 14.53 16.56 14.41Z"/>
+              </svg>
+              <span>Send Brief on WhatsApp (<span class="cms-brand-phone">+91 6291152548</span>) &rarr;</span>
+            </button>
+
+          </div>
+
+          <!-- Direct Channels -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+              <h3 class="text-xl font-black text-slate-900">Direct Contact Channels</h3>
+
+              <a 
+                href="tel:6291152548" 
+                class="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 transition-all group cms-brand-phone"
+              >
+                <div class="w-11 h-11 rounded-xl bg-slate-900 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Phone Call (Direct)</div>
+                  <div class="text-base font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors">+91 6291152548</div>
+                </div>
+              </a>
+
+              <button 
+                class="btn-copy-email w-full text-left flex items-center gap-4 p-4 rounded-2xl bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 transition-all group"
+              >
+                <div class="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center justify-between">
+                    <span>Email (Click to Copy)</span>
+                    <span class="text-[10px] text-blue-600 font-bold">Copy</span>
+                  </div>
+                  <div class="text-sm font-extrabold text-slate-900 truncate group-hover:text-blue-600 transition-colors cms-brand-email">
+                    jyotsna.gfx.2004@gmail.com
+                  </div>
+                </div>
+              </button>
+
+              <a 
+                href="https://wa.me/916291152548" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="btn-whatsapp-pill flex items-center gap-4 p-4 rounded-2xl shadow-md transition-all group cms-whatsapp-link"
+              >
+                <div class="w-11 h-11 rounded-xl bg-white/20 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                  <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.44 19.65L5.27 16.61L5.07 16.3C4.24 14.98 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.04 3.69C14.24 3.69 16.31 4.55 17.86 6.11C19.42 7.66 20.28 9.73 20.27 11.92C20.28 16.46 16.58 20.15 12.04 20.15ZM16.56 14.41C16.31 14.29 15.1 13.69 14.88 13.61C14.65 13.53 14.49 13.49 14.32 13.74C14.16 13.99 13.69 14.54 13.55 14.7C13.41 14.87 13.26 14.89 13.01 14.77C12.76 14.64 11.96 14.38 11.01 13.53C10.27 12.87 9.77 12.06 9.63 11.81C9.48 11.56 9.61 11.43 9.74 11.3C9.85 11.19 9.99 11.01 10.11 10.86C10.24 10.71 10.28 10.61 10.36 10.45C10.44 10.28 10.4 10.14 10.34 10.02C10.28 9.9 9.79 8.69 9.58 8.2C9.38 7.72 9.18 7.79 9.02 7.78C8.88 7.77 8.71 7.77 8.55 7.77C8.38 7.77 8.12 7.83 7.89 8.08C7.66 8.33 7.02 8.93 7.02 10.15C7.02 11.38 7.91 12.56 8.03 12.73C8.16 12.89 9.79 15.4 12.27 16.47C12.86 16.73 13.32 16.88 13.68 17C14.27 17.18 14.81 17.16 15.24 17.09C15.72 17.02 16.71 16.49 16.92 15.9C17.12 15.31 17.12 14.8 17.06 14.7C17 14.59 16.81 14.53 16.56 14.41Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-xs font-bold uppercase tracking-wider text-white/80">Fastest Response</div>
+                  <div class="text-base font-extrabold text-white">Chat on WhatsApp</div>
+                </div>
+              </a>
+
+              <div class="grid grid-cols-2 gap-3 pt-2">
+                <a 
+                  href="https://instagram.com/soralensworks" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="p-3 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-center block text-xs font-bold text-slate-800 transition-colors cms-brand-ig"
+                >
+                  Instagram &bull; @soralensworks
+                </a>
+                <a 
+                  href="https://behance.net/soralensworks" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="p-3 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-center block text-xs font-bold text-slate-800 transition-colors cms-brand-behance"
+                >
+                  Behance &bull; SORA LENSWORKS
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ========================================================
+         VIEW 5: SECURE ADMIN CMS (PASSWORD & ID PROTECTED)
+         ======================================================== -->
+    <div id="view-admin" class="page-view hidden py-12 md:py-20 bg-slate-100 min-h-screen">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        
+        <!-- Admin Title Banner with Secure Logout -->
+        <div class="bg-slate-900 rounded-3xl p-6 sm:p-8 text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Authenticated Session Active
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black tracking-tight">SORA LENSWORKS Secure Admin CMS</h2>
+            <p class="text-xs text-slate-400 mt-1">Manage brand details, password, real client projects, services, and live color themes.</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <button onclick="switchView('home')" class="px-5 py-2.5 rounded-full text-xs font-bold bg-slate-800 hover:bg-slate-700 text-white transition-all">
+              &larr; View Website
+            </button>
+            <button onclick="handleAdminLogout()" class="px-5 py-2.5 rounded-full text-xs font-bold bg-red-600 hover:bg-red-700 text-white transition-all">
+              Log Out
+            </button>
+          </div>
+        </div>
+
+        <!-- 1. Security & Credentials Tab (Change Admin ID & Password) -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+            <div>
+              <h3 class="text-base font-black text-slate-900 flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                Security &amp; Admin Credentials
+              </h3>
+              <p class="text-xs text-slate-500">Change your private Admin ID and Password anytime.</p>
+            </div>
+            <button onclick="saveSecurityFromAdmin()" class="px-5 py-2 rounded-xl text-xs font-extrabold bg-emerald-600 text-white hover:bg-emerald-700 shadow-sm">
+              Save New Credentials
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Admin Login ID:</label>
+              <input type="text" id="adm-sec-id" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs font-semibold focus:ring-2 focus:ring-blue-500" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Admin Password:</label>
+              <input type="password" id="adm-sec-pass" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs font-semibold focus:ring-2 focus:ring-blue-500" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Brand Identity Customizer -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <div>
+              <h3 class="text-lg font-black text-slate-900">Brand &amp; Founder Information</h3>
+              <p class="text-xs text-slate-500">Edit core studio identity hardcoded across the website.</p>
+            </div>
+            <button onclick="saveBrandFromAdmin()" class="px-5 py-2 rounded-xl text-xs font-extrabold bg-blue-600 text-white hover:bg-blue-700 shadow-sm">
+              Save Brand Info
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Brand Name:</label>
+              <input type="text" id="adm-brand-name" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs font-semibold" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Monogram Badge:</label>
+              <input type="text" id="adm-brand-monogram" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs font-semibold" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Founder / Creator Name:</label>
+              <input type="text" id="adm-brand-founder" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs font-semibold" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Brand Tagline:</label>
+              <input type="text" id="adm-brand-tagline" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs font-semibold" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Phone Number (Display):</label>
+              <input type="text" id="adm-brand-phone" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs font-semibold" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp Digits (No + or spaces):</label>
+              <input type="text" id="adm-brand-whatsapp" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs font-semibold" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Email Address:</label>
+              <input type="text" id="adm-brand-email" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs font-semibold" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Instagram Handle:</label>
+              <input type="text" id="adm-brand-ig" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs font-semibold" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Behance Handle:</label>
+              <input type="text" id="adm-brand-behance" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs font-semibold" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Real Projects Management (Add / Edit Real Work) -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <div>
+              <h3 class="text-lg font-black text-slate-900">Real Projects Portfolio</h3>
+              <p class="text-xs text-slate-500">Add genuine client work. If empty, the site shows a clean private portfolio request state.</p>
+            </div>
+            <button onclick="clearProjectForm()" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-800">
+              + New Project Form
+            </button>
+          </div>
+
+          <div id="adm-project-form-card" class="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-4">
+            <h4 class="text-xs font-black uppercase tracking-wider text-blue-700">Add or Edit Real Project Entry</h4>
+            <input type="hidden" id="adm-proj-id" />
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Project Title:</label>
+                <input type="text" id="adm-proj-title" placeholder="e.g. Royal Wedding Master Grade" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Category:</label>
+                <select id="adm-proj-category" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold bg-white">
+                  <option value="poster-design">Poster Design</option>
+                  <option value="banner-design">Banner Design</option>
+                  <option value="social-media-poster">Social Media Marketing Poster</option>
+                  <option value="album-design">Album Design</option>
+                  <option value="wedding-photo-editing">Wedding Photo Editing</option>
+                  <option value="ads-poster-design">Ads Poster Design</option>
+                  <option value="cinematic-video">Cinematic Video Editing</option>
+                  <option value="podcast-editing">Podcast Editing</option>
+                  <option value="motion-graphics">Motion Graphics Video</option>
+                  <option value="ai-ads-video">AI Ads Video</option>
+                  <option value="ai-documentary">AI Documentary Video Editing</option>
+                  <option value="ads-video-editing">Ads Video Editing</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Discipline Label:</label>
+                <input type="text" id="adm-proj-catlabel" placeholder="e.g. Wedding Photo Editing" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Client Name:</label>
+                <input type="text" id="adm-proj-client" placeholder="e.g. Private Couple / Heritage Brand" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Delivery Timeline:</label>
+                <input type="text" id="adm-proj-timeline" placeholder="e.g. 48h Turnaround" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Image URL / Path:</label>
+                <input type="text" id="adm-proj-image" placeholder="Image URL / file path" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Subtitle / Pitch:</label>
+              <input type="text" id="adm-proj-subtitle" placeholder="High-end skin retouching &amp; golden hour color profile" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Full Description:</label>
+              <textarea id="adm-proj-desc" rows="2" placeholder="Full case study explanation..." class="w-full px-3 py-2 rounded-xl border text-xs font-semibold"></textarea>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Deliverables (Comma separated):</label>
+                <input type="text" id="adm-proj-deliverables" placeholder="150 Curated High-Res Photos, Album Book" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Tools (Comma separated):</label>
+                <input type="text" id="adm-proj-tools" placeholder="Photoshop, Lightroom, Capture One" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold" />
+              </div>
+            </div>
+
+            <div class="flex items-center justify-end gap-3 pt-2">
+              <button onclick="clearProjectForm()" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-200">Cancel</button>
+              <button onclick="saveProjectFromAdmin(event)" class="px-6 py-2.5 rounded-xl text-xs font-black text-white bg-blue-600 hover:bg-blue-700 shadow-md">
+                Save Project
+              </button>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto rounded-2xl border border-slate-200">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-slate-100 text-[11px] font-black uppercase tracking-wider text-slate-600 border-b border-slate-200">
+                  <th class="py-3 px-4">#</th>
+                  <th class="py-3 px-4">Title</th>
+                  <th class="py-3 px-4">Category</th>
+                  <th class="py-3 px-4">Client</th>
+                  <th class="py-3 px-4 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="adm-projects-list"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 4. Services Directory Management -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <div>
+              <h3 class="text-lg font-black text-slate-900">Services Management</h3>
+              <p class="text-xs text-slate-500">Customize the 12 core disciplines or add new offerings.</p>
+            </div>
+            <button onclick="clearServiceForm()" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-800">
+              + New Service Form
+            </button>
+          </div>
+
+          <div id="adm-service-form-card" class="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-4">
+            <h4 class="text-xs font-black uppercase tracking-wider text-indigo-700">Service Definition</h4>
+            <input type="hidden" id="adm-srv-id" />
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Service Title:</label>
+                <input type="text" id="adm-srv-title" placeholder="e.g. Poster Design" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Category:</label>
+                <select id="adm-srv-category" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold bg-white">
+                  <option value="graphic-design">Graphic Design</option>
+                  <option value="video-editing">Video Editing</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Description:</label>
+              <textarea id="adm-srv-desc" rows="2" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold"></textarea>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Deliverables:</label>
+              <input type="text" id="adm-srv-deliverables" class="w-full px-3 py-2 rounded-xl border text-xs font-semibold" />
+            </div>
+
+            <div class="flex items-center justify-end gap-3 pt-2">
+              <button onclick="clearServiceForm()" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-200">Cancel</button>
+              <button onclick="saveServiceFromAdmin(event)" class="px-6 py-2.5 rounded-xl text-xs font-black text-white bg-indigo-600 hover:bg-indigo-700 shadow-md">
+                Save Service
+              </button>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto rounded-2xl border border-slate-200">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-slate-100 text-[11px] font-black uppercase tracking-wider text-slate-600 border-b border-slate-200">
+                  <th class="py-3 px-4">#</th>
+                  <th class="py-3 px-4">Service</th>
+                  <th class="py-3 px-4">Category</th>
+                  <th class="py-3 px-4">Description</th>
+                  <th class="py-3 px-4 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="adm-services-list"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 5. Theme Color Customizer -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <div>
+              <h3 class="text-lg font-black text-slate-900">Live Color Theme Palette</h3>
+              <p class="text-xs text-slate-500">Pick any custom hex colors. Colors update immediately across the site.</p>
+            </div>
+            <button onclick="saveThemeFromAdmin()" class="px-5 py-2 rounded-xl text-xs font-extrabold bg-blue-600 text-white hover:bg-blue-700 shadow-sm">
+              Apply Live Theme
+            </button>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
+            <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-2">
+              <label class="block text-[11px] font-bold text-slate-600">Primary Navy:</label>
+              <input type="color" id="adm-color-navy" class="w-12 h-10 mx-auto rounded cursor-pointer border" />
+            </div>
+            <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-2">
+              <label class="block text-[11px] font-bold text-slate-600">Royal Blue:</label>
+              <input type="color" id="adm-color-royal" class="w-12 h-10 mx-auto rounded cursor-pointer border" />
+            </div>
+            <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-2">
+              <label class="block text-[11px] font-bold text-slate-600">Sky Blue:</label>
+              <input type="color" id="adm-color-sky" class="w-12 h-10 mx-auto rounded cursor-pointer border" />
+            </div>
+            <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-2">
+              <label class="block text-[11px] font-bold text-slate-600">Ice Light Surface:</label>
+              <input type="color" id="adm-color-ice" class="w-12 h-10 mx-auto rounded cursor-pointer border" />
+            </div>
+            <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-2">
+              <label class="block text-[11px] font-bold text-slate-600">Gold Accent:</label>
+              <input type="color" id="adm-color-gold" class="w-12 h-10 mx-auto rounded cursor-pointer border" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. JSON Backup, Import & Export -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <div>
+              <h3 class="text-lg font-black text-slate-900">Site Backup &amp; Data Transfer</h3>
+              <p class="text-xs text-slate-500">Export everything to JSON or paste a JSON configuration to restore.</p>
+            </div>
+            <div class="space-x-2">
+              <button onclick="copyCMSJSON()" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-800">
+                Copy JSON
+              </button>
+              <button onclick="importJSONToCMS()" class="px-4 py-2 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white">
+                Import JSON
+              </button>
+            </div>
+          </div>
+
+          <textarea id="adm-json-export" rows="6" class="w-full font-mono text-xs p-4 rounded-2xl border border-slate-200 bg-slate-50 text-slate-800"></textarea>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ========================================================
+         FOOTER WITH PROMINENT 'RETURN TO COVER' & STEALTH ADMIN TRIGGER
+         ======================================================== -->
+    <footer class="bg-slate-950 text-white py-14 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-slate-800">
+          
+          <div class="flex items-center gap-4">
+            <img src="assets/sora-logo-full.jpg" alt="SORA LENSWORKS" class="h-14 w-14 rounded-2xl object-cover border border-slate-700 shadow-md" />
+            <div>
+              <div class="text-xl font-black tracking-tight text-white cms-brand-name">SORA LENSWORKS</div>
+              <div class="text-xs text-slate-400 font-medium">
+                By <span class="cms-brand-founder">Jyotsna Bhattacharyya</span> &bull; <span class="cms-brand-monogram">JB GFX</span> Studio
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Navigation Links -->
+          <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-bold text-slate-400">
+            <button onclick="switchView('home')" class="hover:text-white transition-colors">Home</button>
+            <button onclick="switchView('work')" class="hover:text-white transition-colors">Work</button>
+            <button onclick="switchView('services')" class="hover:text-white transition-colors">Services</button>
+            <button onclick="switchView('contact')" class="hover:text-white transition-colors">Contact</button>
+            
+            <!-- PROMINENT RETURN TO COVER BUTTON IN FOOTER -->
+            <button 
+              id="btn-footer-cover" 
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-slate-900 border border-slate-700 text-blue-400 hover:text-white hover:bg-slate-800 transition-all"
+              title="Return to Cover Page"
+            >
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+              </svg>
+              <span>Return to Cover Page</span>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+          <div class="flex items-center gap-2">
+            <span>&copy; 2026 <span class="cms-brand-name">SORA LENSWORKS</span> • <span class="cms-brand-founder">Jyotsna Bhattacharyya</span>. All Rights Reserved.</span>
+            <!-- Stealth Admin Trigger (Discreet Lock Trigger for Jyotsna Only) -->
+            <span id="stealth-admin-trigger" class="stealth-admin-trigger ml-2 text-[10px]" title="Studio Gate">🔒 Studio Vault</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="tel:6291152548" class="hover:text-slate-300 cms-brand-phone">+91 6291152548</a>
+            <span>&bull;</span>
+            <button class="hover:text-slate-300 btn-copy-email cms-brand-email">jyotsna.gfx.2004@gmail.com</button>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </main>
+
+
+  <!-- ========================================================
+       SECURE ADMIN LOGIN GATEWAY MODAL (PASSWORD PROTECTED)
+       ======================================================== -->
+  <div id="admin-login-modal" class="fixed inset-0 z-[20000] modal-strict-hidden items-center justify-center p-4" role="dialog" aria-modal="true">
+    <div id="admin-login-backdrop" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md transition-opacity"></div>
+    
+    <div id="login-card" class="relative bg-slate-900 border border-slate-700/80 rounded-3xl max-w-sm w-full p-8 shadow-2xl z-10 space-y-6 text-white my-auto">
+      
+      <div class="text-center space-y-2">
+        <img src="assets/sora-logo-circle.png" alt="SORA LENSWORKS" class="w-14 h-14 rounded-2xl object-cover border border-slate-700 mx-auto shadow-md" />
+        <h3 class="text-xl font-black tracking-tight">Studio Vault Access</h3>
+        <p class="text-xs text-slate-400">Enter your secure Administrator ID &amp; Password to unlock the website CMS control panel.</p>
+      </div>
+
+      <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+        <div>
+          <label for="login-username" class="block text-xs font-bold text-slate-300 mb-1">Admin ID:</label>
+          <input 
+            type="text" 
+            id="login-username" 
+            placeholder="Default: admin" 
+            required 
+            class="w-full px-3.5 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-xs text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <div>
+          <label for="login-password" class="block text-xs font-bold text-slate-300 mb-1">Password:</label>
+          <input 
+            type="password" 
+            id="login-password" 
+            placeholder="Default: Sora@2026" 
+            required 
+            class="w-full px-3.5 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-xs text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <div id="login-error-msg" class="text-xs font-bold text-red-400 text-center hidden"></div>
+
+        <div class="flex items-center gap-3 pt-2">
+          <button 
+            type="button" 
+            id="btn-cancel-login" 
+            class="w-1/2 py-2.5 rounded-xl text-xs font-bold text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700 transition-colors"
+          >
+            Cancel
+          </button>
+          <button 
+            type="submit" 
+            class="w-1/2 py-2.5 rounded-xl text-xs font-black text-white bg-blue-600 hover:bg-blue-700 transition-all shadow-md"
+          >
+            Unlock &rarr;
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       INTERACTIVE PROJECT DETAIL MODAL (STRICTLY HIDDEN ON LOAD)
+       ======================================================== -->
+  <div id="project-modal" class="fixed inset-0 z-[10000] modal-strict-hidden overflow-y-auto items-center justify-center p-4 sm:p-6" role="dialog" aria-modal="true">
+    
+    <div id="modal-backdrop" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm transition-opacity"></div>
+
+    <div class="relative bg-white rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl z-10 max-h-[90vh] flex flex-col my-auto border border-slate-100">
+      
+      <div class="p-6 bg-slate-900 text-white flex items-center justify-between shrink-0">
+        <div>
+          <span id="modal-category" class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-blue-500/20 text-blue-300 border border-blue-400/30 uppercase tracking-wider mb-1">
+            Category
+          </span>
+          <h3 id="modal-title" class="text-xl sm:text-2xl font-black tracking-tight text-white">
+            Project Title
+          </h3>
+        </div>
+        <button id="modal-close-btn" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-slate-700 text-white flex items-center justify-center transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="p-6 sm:p-8 overflow-y-auto space-y-6">
+        
+        <div class="w-full aspect-[16/9] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
+          <img id="modal-image" src="" alt="Project Preview" class="w-full h-full object-cover" />
+        </div>
+
+        <div>
+          <h4 id="modal-subtitle" class="text-base font-extrabold text-blue-700">
+            Subtitle / Project Headline
+          </h4>
+          <p id="modal-desc" class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Detailed project summary description.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Client / Industry:</div>
+            <div id="modal-client" class="text-sm font-extrabold text-slate-900 mt-0.5">-</div>
+          </div>
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Typical Turnaround:</div>
+            <div id="modal-timeline" class="text-sm font-extrabold text-slate-900 mt-0.5">-</div>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-black uppercase tracking-wider text-slate-800 mb-2">Deliverables Provided:</h5>
+          <ul id="modal-deliverables" class="space-y-1.5"></ul>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-black uppercase tracking-wider text-slate-800 mb-2">Software &amp; Tools Arsenal:</h5>
+          <div id="modal-tools" class="flex flex-wrap gap-1.5"></div>
+        </div>
+
+      </div>
+
+      <div class="p-6 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 shrink-0">
+        <div class="text-xs text-slate-500 font-medium text-center sm:text-left">
+          Want a similar creative asset for your brand?
+        </div>
+        <button 
+          id="modal-wa-btn"
+          class="w-full sm:w-auto px-6 py-3 rounded-full font-extrabold text-xs uppercase tracking-wider text-white btn-whatsapp-pill shadow-md transition-all flex items-center justify-center gap-2"
+        >
+          <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.44 19.65L5.27 16.61L5.07 16.3C4.24 14.98 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.04 3.69C14.24 3.69 16.31 4.55 17.86 6.11C19.42 7.66 20.28 9.73 20.27 11.92C20.28 16.46 16.58 20.15 12.04 20.15ZM16.56 14.41C16.31 14.29 15.1 13.69 14.88 13.61C14.65 13.53 14.49 13.49 14.32 13.74C14.16 13.99 13.69 14.54 13.55 14.7C13.41 14.87 13.26 14.89 13.01 14.77C12.76 14.64 11.96 14.38 11.01 13.53C10.27 12.87 9.77 12.06 9.63 11.81C9.48 11.56 9.61 11.43 9.74 11.3C9.85 11.19 9.99 11.01 10.11 10.86C10.24 10.71 10.28 10.61 10.36 10.45C10.44 10.28 10.4 10.14 10.34 10.02C10.28 9.9 9.79 8.69 9.58 8.2C9.38 7.72 9.18 7.79 9.02 7.78C8.88 7.77 8.71 7.77 8.55 7.77C8.38 7.77 8.12 7.83 7.89 8.08C7.66 8.33 7.02 8.93 7.02 10.15C7.02 11.38 7.91 12.56 8.03 12.73C8.16 12.89 9.79 15.4 12.27 16.47C12.86 16.73 13.32 16.88 13.68 17C14.27 17.18 14.81 17.16 15.24 17.09C15.72 17.02 16.71 16.49 16.92 15.9C17.12 15.31 17.12 14.8 17.06 14.7C17 14.59 16.81 14.53 16.56 14.41Z"/>
+          </svg>
+          <span>Request Similar Project on WhatsApp &rarr;</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       TOAST NOTIFICATION FEEDBACK
+       ======================================================== -->
+  <div id="toast" class="flex items-center gap-3 px-5 py-3 rounded-2xl bg-slate-900 text-white shadow-2xl border border-slate-700">
+    <div class="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0">
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+    </div>
+    <span id="toast-msg" class="text-xs font-bold tracking-wide">Action completed!</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/app.js"></script>
+</body>
+</html>
