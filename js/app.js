@@ -357,27 +357,57 @@ window.handleAdminLogout = function() {
 // ========================================================
 // 5. PRELOADER & COVER PAGE (STAGES 1 & 2 - UNTOUCHED)
 // ========================================================
+function triggerCoverPageAnimations() {
+  const introCover = document.getElementById("intro-cover");
+  if (!introCover) return;
+  introCover.classList.remove("cover-animated");
+  void introCover.offsetWidth; // force browser reflow
+  introCover.classList.add("cover-animated");
+}
+
 function initPreloader() {
   const preloader = document.getElementById("preloader");
   const countEl = document.getElementById("preloader-count");
   const progressEl = document.getElementById("preloader-bar");
 
-  let progress = 0;
-  const interval = setInterval(() => {
-    progress += Math.floor(Math.random() * 12) + 6;
-    if (progress > 100) progress = 100;
+  if (!preloader) return;
 
-    if (countEl) countEl.textContent = `${progress}%`;
-    if (progressEl) progressEl.style.width = `${progress}%`;
+  // Make sure it starts visibly at 0%
+  if (countEl) countEl.textContent = "0%";
+  if (progressEl) progressEl.style.width = "0%";
 
-    if (progress >= 100) {
-      clearInterval(interval);
+  const duration = 1200; // Snappy 1.2s total count duration (no added wait)
+  let startTimestamp = null;
+
+  function animateCount(timestamp) {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const elapsed = timestamp - startTimestamp;
+    const progressRatio = Math.min(elapsed / duration, 1);
+
+    // Ease-out cubic: fast, kinetic, satisfying count-up
+    const eased = 1 - Math.pow(1 - progressRatio, 2.5);
+    const currentPercent = Math.min(100, Math.floor(eased * 100));
+
+    if (countEl) countEl.textContent = `${currentPercent}%`;
+    if (progressEl) progressEl.style.width = `${currentPercent}%`;
+
+    if (progressRatio < 1) {
+      requestAnimationFrame(animateCount);
+    } else {
+      if (countEl) countEl.textContent = "100%";
+      if (progressEl) progressEl.style.width = "100%";
       setTimeout(() => {
-        if (preloader) preloader.classList.add("fade-out");
+        preloader.classList.add("fade-out");
         document.body.classList.add("cover-active");
-      }, 400);
+        setTimeout(triggerCoverPageAnimations, 80);
+      }, 200);
     }
-  }, 45);
+  }
+
+  // Brief initial 80ms delay so user clearly sees 0% start counting up
+  setTimeout(() => {
+    requestAnimationFrame(animateCount);
+  }, 80);
 }
 
 function initCoverPage() {
@@ -397,6 +427,7 @@ function initCoverPage() {
     setTimeout(() => {
       if (introCover) introCover.classList.remove("curtain-lifted");
       document.body.classList.add("cover-active");
+      triggerCoverPageAnimations();
     }, 200);
   }
 
