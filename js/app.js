@@ -374,7 +374,10 @@ function initPreloader() {
 
   // Make sure it starts visibly at 0%
   if (countEl) countEl.textContent = "0%";
-  if (progressEl) progressEl.style.width = "0%";
+  if (progressEl) {
+    progressEl.style.width = "0%";
+    progressEl.style.transition = "none";
+  }
 
   const duration = 1200; // Snappy 1.2s total count duration (no added wait)
   let startTimestamp = null;
